@@ -5,8 +5,8 @@ Implementation of an online exam proctoring tool with the main focus on microser
 
 OS : Windows
 Requirements : Docker, minikube, kubectl
-Run windows powershell as administrator
-Enable the microsoft IIS
+Run windows powershell as administrator.
+Enable the microsoft IIS.
 
 ## Execution Steps
 
@@ -64,9 +64,9 @@ The service is now exposed, can be accessed at http://*cluster-ip*:30004/camrec.
 
 ***It is to benoted that, the port numbers, docker image names and versions can be changed. The values mentioned here are just compatible with the contents in the YAML file. So just make sure when you change the values, remember to update the YAML files as well.***
 
-### Orchestration commands
+## Orchestration commands
 
-**To scale the service up and down, use the following command with the requuired number of replicas.**
+**To scale the service up and down, use the following command with the required number of replicas.**
 
 $ kubectl scale deployments/*deployment name* --replicas=3
 
